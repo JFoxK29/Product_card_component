@@ -5,17 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
   
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  
   <!--Montserrat, Fraunces-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Product preview card component</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="desktop1440.css" media="screen and (min-width: 1440px)">
+  
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -24,17 +32,24 @@
 </head>
 <body>
 <div class="product-container">
+  <picture>
+    <source media="(min-width: 1440px)" srcset="./images/image-product-desktop.jpg">
     <img id="image-product-mobile" src="./images/image-product-mobile.jpg" alt=" "/>
+  </picture>
+    
     <div class="product-details">
       <p class="product-details__category">Perfume</p>
       <h2>Gabrielle Essence Eau De Parfum</h2>
       <p>A floral, solar and voluptuous<br> interpretation composed by Olivier <br> Polge, 
-        Perfumer-Creator <br> for the House of CHANEL.</p>
+        Perfumer-Creator  for the House of <br>CHANEL.</p>
         <div class="product-price">
           <span>$149.99</span>
           <span>$169.99</span>
         </div>
-        <button>Add to cart</button>
+        <button>
+          <span class="icon"></span>
+          Add to cart
+        </button>
     </div>
   </div>
   <!--<div class="attribution">
